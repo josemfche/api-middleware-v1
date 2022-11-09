@@ -1,0 +1,10 @@
+{
+  "exec": "npm run dev",
+  "watch": ["src/*", "server"],
+  "ext": "js, html, css, json",
+  "events": {
+    "restart": "kill-port 8100",
+    "crash": "kill-port 8100"
+  },
+  "delay": "1500"
+}
